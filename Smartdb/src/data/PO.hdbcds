@@ -1,0 +1,8 @@
+context PO {
+/* THIS IS A TABLE FOR PURCHASE ORDER APPROVAL STATUS */
+    /*@@layout{"layoutInfo":{"x":-328,"y":-22.5}}*/
+    entity APPROVAL_STATUS {
+        ID   : String(1);
+        TEXT : String(200);
+    };
+}; 

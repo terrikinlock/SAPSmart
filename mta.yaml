@@ -1,3 +1,19 @@
 ID: SAPSmart
 _schema-version: '2.0'
 version: 0.0.1
+
+modules:
+ - name: Smartdb
+   type: hdb
+   path: Smartdb
+   requires:
+    - name: hdi_Smartdb
+
+resources:
+ - name: hdi_Smartdb
+   parameters:
+      config:
+         schema: SmartDB
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
